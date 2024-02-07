@@ -1,16 +1,13 @@
 setInterval(() => {
-  date = new Date();
-  hourElement = document.getElementById("hourId");
-  minElement = document.getElementById("minId");
+  d = new Date(); //object of date()
+  hr = d.getHours();
+  min = d.getMinutes();
+  sec = d.getSeconds();
+  hr_rotation = 30 * hr + min / 2; //converting current time
+  min_rotation = 6 * min;
+  sec_rotation = 6 * sec;
 
-  hours = date.getHours();
-  mins = date.getMinutes();
-  secs = date.getSeconds();
-
-  rotateHours = 30 * hours + mins / 2;
-  rotateMin = 6 * mins;
-  rotateSec = 6 * secs;
-
-  hourElement.style.transform = `rotate(${rotateHours}deg)`;
-  minElement.style.transform = `rotate(${rotateMin}deg)`;
-});
+  hour.style.transform = `rotate(${hr_rotation}deg)`;
+  minute.style.transform = `rotate(${min_rotation}deg)`;
+  second.style.transform = `rotate(${sec_rotation}deg)`;
+}, 1000);

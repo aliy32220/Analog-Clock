@@ -1,47 +1,42 @@
 #clockContainer {
-  height: 100%;
-  width: 100%;
-  margin-left: 50%;
-  margin-top: 50%;
+  position: relative;
+  margin: auto;
+  height: 40vw;
+  width: 40vw;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="140" height="140" viewBox="0 0 140 140" fill="none"><circle cx="68" cy="68" r="47.5" stroke="black" stroke-width="5" stroke-dasharray="1 25.16"/><circle opacity="0.2" cx="68" cy="68" r="47.5" stroke="black" stroke-width="5" stroke-dasharray="0.5 4.7"/><g opacity="0.2" filter="url(%23filter0_ddii_0_1)"><circle cx="68" cy="68" r="58" fill="%23F3F3F3"/><circle cx="68" cy="68" r="57.5" stroke="white"/></g><circle cx="68" cy="68" r="1" fill="white"/><defs><filter id="filter0_ddii_0_1" x="0" y="0" width="140" height="140" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dx="4" dy="4"/><feGaussianBlur stdDeviation="5"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feMorphology radius="1" operator="dilate" in="SourceAlpha" result="effect2_dropShadow_0_1"/><feOffset dx="-4" dy="-4"/><feGaussianBlur stdDeviation="2.5"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/><feBlend mode="lighten" in2="effect1_dropShadow_0_1" result="effect2_dropShadow_0_1"/><feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_0_1" result="shape"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dx="4" dy="4"/><feGaussianBlur stdDeviation="5"/><feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/><feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/><feBlend mode="normal" in2="effect3_innerShadow_0_1" result="effect4_innerShadow_0_1"/></filter></defs></svg>');
+  background-size: 100%;
+}
+
+#hour,
+#minute,
+#second {
   position: absolute;
-  align-items: center;
+  background: black;
+  border-radius: 10px;
+  transform-origin: bottom;
 }
-#outer {
-  padding-top: 30%;
-}
-#inner {
-  /* margin-bottom: 50%; */
-}
+
 #hour {
-  /* Group 1503 */
+  width: 1.8%;
+  height: 25%;
+  top: 25%;
+  left: 48.85%;
+  opacity: 0.5;
+}
 
-  position: absolute;
-  width: 8px;
-  height: 36.5px;
-  left: 139.15px;
-  top: 279.2px;
+#minute {
+  width: 1.6%;
+  height: 30%;
+  top: 19%;
+  left: 48.9%;
+  opacity: 0.5;
+}
 
-  transform: matrix(-0.66, 0.75, 0.75, 0.66, 0, 0);
-
-  /* Vector 4 */
-
-  position: absolute;
-  width: 4px;
-  height: 36.5px;
-  left: 136.5px;
-  top: 282.19px;
-
-  background: #3a3a3a;
-  transform: matrix(-0.66, 0.75, 0.75, 0.66, 0, 0);
-
-  /* Vector 5 */
-
-  position: absolute;
-  width: 4px;
-  height: 36.5px;
-  left: 136.5px;
-  top: 282.19px;
-
-  background: #828282;
-  transform: rotate(-48.42deg);
+#second {
+  width: 1%;
+  height: 40%;
+  top: 9%;
+  left: 49.25%;
+  opacity: 0.6;
+  background-color: red;
 }
