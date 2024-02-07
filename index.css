@@ -1,0 +1,47 @@
+#clockContainer {
+  height: 100%;
+  width: 100%;
+  margin-left: 50%;
+  margin-top: 50%;
+  position: absolute;
+  align-items: center;
+}
+#outer {
+  padding-top: 30%;
+}
+#inner {
+  /* margin-bottom: 50%; */
+}
+#hour {
+  /* Group 1503 */
+
+  position: absolute;
+  width: 8px;
+  height: 36.5px;
+  left: 139.15px;
+  top: 279.2px;
+
+  transform: matrix(-0.66, 0.75, 0.75, 0.66, 0, 0);
+
+  /* Vector 4 */
+
+  position: absolute;
+  width: 4px;
+  height: 36.5px;
+  left: 136.5px;
+  top: 282.19px;
+
+  background: #3a3a3a;
+  transform: matrix(-0.66, 0.75, 0.75, 0.66, 0, 0);
+
+  /* Vector 5 */
+
+  position: absolute;
+  width: 4px;
+  height: 36.5px;
+  left: 136.5px;
+  top: 282.19px;
+
+  background: #828282;
+  transform: rotate(-48.42deg);
+}
