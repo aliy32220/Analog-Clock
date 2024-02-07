@@ -2,7 +2,6 @@ setInterval(() => {
   date = new Date();
   hourElement = document.getElementById("hourId");
   minElement = document.getElementById("minId");
-  // hourElement = document.getElementById('hourId')
 
   hours = date.getHours();
   mins = date.getMinutes();
@@ -14,5 +13,4 @@ setInterval(() => {
 
   hourElement.style.transform = `rotate(${rotateHours}deg)`;
   minElement.style.transform = `rotate(${rotateMin}deg)`;
-  // secId.style.transform = `rotate(${rotateSec}deg)`;
 });
